@@ -1,10 +1,12 @@
-function mensagem(){
-    alert("cu");
-}
-
 imprime = (msg) => console.log(msg);
-
-function sorteia(){
+const data = new Date();
+function hora_atual(){
+    setTimeout(() => {
+    document.getElementById("h").innerHTML = data.getHours() + ":" + data.getMinutes() + ":" + data.getSeconds();
+    hora_atual();
+    },1000);
+}
+function sorteio(){
     let num1 = document.getElementById("inicio").value;
     let num2 = document.getElementById("fim").value;
     num2 = Number(num2)+1;
@@ -16,11 +18,11 @@ function sorteia(){
 function escolher_aba(btn){   
     for(let i = 1; i <= 4; i++){
     let id_btn = "btn"+i;
-    let id_aba = "aba"+i;
+    let id_aba = "ab"+i;
     
-    document.getElementById(id_btn).style.background = "blue";
-    document.getElementById(id_btn).disabled = false;
-    document.getElementById(id_aba).style.display = "none";
+document.getElementById(id_btn).style.background = "blue";
+document.getElementById(id_btn).disabled = false;
+document.getElementById(id_aba).style.display = "none";
     }
 
     if(btn == "1"){
