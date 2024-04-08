@@ -1,6 +1,7 @@
 imprime = (msg) => console.log(msg);
-const data = new Date();
+
 function hora_atual(){
+    const data = new Date();
     setTimeout(() => {
     document.getElementById("h").innerHTML = data.getHours() + ":" + data.getMinutes() + ":" + data.getSeconds();
     hora_atual();
@@ -52,7 +53,6 @@ document.getElementById(id_aba).style.display = "none";
         document.getElementById("ab4").style.display = "block";
     }
 }
-let
 
 function iniciar(){
     inicio = document.getElementById("inicio").value;
@@ -83,7 +83,8 @@ function ligar_despertador(){
 }
 function ajustar(){
     hora_d = document.getElementById("hora_d").value;
-    hora_d = document.getElementById("min_d").value;
-    hora_d = document.getElementById("seg_d").value;
+    min_d = document.getElementById("min_d").value;
+    seg_d = document.getElementById("seg_d").value;
+
     despertar = setInterval(ligar_despertador,1000);
 }   
