@@ -27,10 +27,20 @@
                 <div class="abageral aba1" id="ab1">
                     Hora Atual: <span id="h"></span>
                 </div>
-                <div class="abageral aba2" id="ab2"></div>
-                <div class="abageral aba3" id="ab3"></div>
+                <div class="abageral aba2" id="ab2">
+                    Contar de: <input type="number" id="inicio">
+                    Até: <input type="number" id="fim"> 
+                    <button onclick="inicio"></button>
+                </div>
+                <div class="abageral aba3" id="ab3">
+                    Despertar as: <input type="number" class="set_tempo" id="hora_d">
+                    <input type="number" class="set_tempo" id="min_d">
+                    <input type="number" class="set_tempo" id="seg_d">
+                    <button onclick="iniciar_despertador()">Iniciar</button>
+                </div> 
                 <div class="abageral aba4" id="ab4"></div>
             </div>
+
         </div>
     </section>
     <footer class="rodape">
